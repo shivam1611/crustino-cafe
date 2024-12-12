@@ -1,3 +1,36 @@
+/* Basic Styling and Assets used  */
+/* AUTHOR - SHIVAM SHARMA  */
+
+/* ######################################################################## */
+
+/* Fonts imported from goolgle fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* fonts  */
+  --main-font: "Lora", serif;
+  --body-font: "Inter", sans-serif;
+
+  /* colors pallete  */
+  --tomato-red: #e63946;
+  --olive: #6a994e;
+  --cream-white: #f8f3e6;
+  --charcoal-gray: #333333;
+  --accent-golden-yellow: #ffd166;
+  --wood-brown: #d46c4e;
+}
+
+/* css reset  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}

@@ -1,9 +1,33 @@
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Cart from "./Pages/Cart/Cart";
+import CreateOrder from "./Pages/CreateOrder/CreateOrder";
 
 const App = () => {
-  return (
-    <div className="text-white bg-green-500 p-2 text-2xl text-center">App is initialized fine</div>
-  )
-}
 
-export default App
+  const router  = createBrowserRouter([
+    {
+      path:'',
+      element:<Home/>
+    },
+    {
+      path:'/about',
+      element:<About/>
+    },
+    {
+      path:'/cart',
+      element:<Cart/>
+    },
+    {
+      path:'order/new',
+      element:<CreateOrder/>
+    },
+   
+  ])
+  return (
+    <RouterProvider router={router}/>
+  );
+};
+
+export default App;
